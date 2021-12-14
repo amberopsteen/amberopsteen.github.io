@@ -20,10 +20,9 @@
         <li><a href="#h3">Contact</a></li>
       </ul>
     </div>
-
   </header>
   <body>
-    <div class="landing">
+    <div class="landing" id="home">
       <div class="content">
         <img src="media/foto5.jpg" />
         <h1>Amber Opsteen</h1>
@@ -62,44 +61,49 @@
     <div class="contact" id="h3">
       <div class="text_contact">
         <h2>Contact</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, vel
-          dolorem modi commodi impedit eos ipsum. Illo vitae, rem aspernatur,
-          perferendis quis laborum sed mollitia tenetur labore voluptatem
-          repellat dolore.
-        </p>
+        <div class="container">
+          <form action="/action_page.php">
+            <label for="fname">Voornaam</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Uw voornaam.."
+            />
+
+            <label for="lname">Achternaam</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Uw achternaam.."
+            />
+
+            <label for="country">Land</label>
+            <select id="country" name="country">
+              <option value="nederland">Nederland</option>
+              <option value="duitsland">Duitsland</option>
+              <option value="engeland">Engeland</option>
+            </select>
+
+            <label for="onderwerp">Onderwerp</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Uw bericht"
+              style="height: 200px"
+            ></textarea>
+
+            <input type="verzenden" value="verzenden" />
+          </form>
+        </div>
+      </div>
+      <div class="photo">
+        <img class="" src="media/contact.jpg" />
         <a href="https://nl-nl.facebook.com/" class="fa fa-facebook"></a>
         <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
         <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
-        <div class="chat">
-          
-        </div>
-        <button class="open_chat" onclick="openForm()">Chat</button>
-
-<div class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Chat</h1>
-
-    <label for="msg"><b>Message</b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
-
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
-
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
-
       </div>
-      <img class="" src="media/contact.jpg" />
     </div>
   </body>
 </html>
