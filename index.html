@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <header>
+    <div class="navbar">
+      <ul>
+        <li><a #home class="active" href="#home">Home</a></li>
+        <li><a href="#h1">Wie ben ik?</a></li>
+        <li><a href="#h2">Projecten</a></li>
+        <li><a href="#h3">Contact</a></li>
+      </ul>
+    </div>
+
+  </header>
+  <body>
+    <div class="landing">
+      <div class="content">
+        <img src="media/foto5.jpg" />
+        <h1>Amber Opsteen</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+          veritatis!
+        </p>
+      </div>
+    </div>
+    <div class="who_am_i" id="h1">
+      <div class="text_who_am_i">
+        <h2>Wie ben ik</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+          nesciunt nihil error inventore laboriosam necessitatibus rem fuga
+          voluptas, libero fugiat soluta repellendus repellat dicta quasi, sunt
+          atque. Quod delectus molestiae deserunt illum totam. Consequatur
+          sapiente maiores omnis repellat sequi sunt modi commodi nemo! Velit
+          quibusdam reiciendis atque, cum vitae iusto?
+        </p>
+      </div>
+      <img class="" src="media/coffee.jpg" />
+    </div>
+    <div class="projects" id="h2">
+      <img class="" src="media/projects.jpg" />
+      <div class="text_projects">
+        <h2>Projects</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+          delectus natus sed inventore et nostrum sequi, mollitia fuga, illo
+          aliquid debitis facere doloribus maxime obcaecati atque! Placeat,
+          reiciendis. Culpa, eaque?
+        </p>
+      </div>
+    </div>
+    <div class="contact" id="h3">
+      <div class="text_contact">
+        <h2>Contact</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, vel
+          dolorem modi commodi impedit eos ipsum. Illo vitae, rem aspernatur,
+          perferendis quis laborum sed mollitia tenetur labore voluptatem
+          repellat dolore.
+        </p>
+        <a href="https://nl-nl.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+        <div class="chat">
+          
+        </div>
+        <button class="open_chat" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+      </div>
+      <img class="" src="media/contact.jpg" />
+    </div>
+  </body>
+</html>

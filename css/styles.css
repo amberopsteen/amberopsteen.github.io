@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: #333333;
+}
+
+.navbar .active {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #e8e3d9;
+  color: black;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  display: flex;
+}
+
+li a {
+  display: flex;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+li a:hover:not(.active) {
+  background-color: #e8e3d9;
+}
+
+h2 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.landing {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 800px;
+  background-image: url("../media/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px 150px 50px 150px;
+}
+
+.landing .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 450px;
+  height: 600px;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-width: 5px;
+}
+
+.landing .content img {
+  display: flex;
+  justify-content: center;
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+}
+
+.landing .content h1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: lighter;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.1;
+  padding-top: 20px;
+}
+
+.landing .content p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.who_am_i {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  background-color: white;
+}
+
+.who_am_i .text_who_am_i {
+  text-align: center;
+  width: 350px;
+  background-color: white;
+}
+
+.who_am_i .text_who_am_i h2 {
+  font-family: "Playfair Display", serif;
+  color: rgb(3, 3, 3);
+}
+
+.who_am_i .text_who_am_i p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(3, 3, 3);
+  margin-top: 50px;
+}
+
+.who_am_i img {
+  width: 300px;
+  height: 450px;
+  margin: 80px;
+  border-color: #e8e3d9;
+  border-style: solid;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  background-color: #e8e3d9;
+}
+
+.projects img {
+  width: 300px;
+  height: 450px;
+  margin: 80px;
+  border-color: white;
+  border-style: solid;
+}
+
+.projects .text_projects {
+  width: 350px;
+  background-color: #e8e3d9;
+  text-align: center;
+  margin: 80px;
+}
+
+.projects .text_projects h2 {
+  font-family: "Playfair Display", serif;
+  color: rgb(3, 3, 3);
+}
+
+.projects .text_projects p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(3, 3, 3);
+  margin-top: 50px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  background-color: white;
+}
+
+.contact .text_contact {
+  width: 350px;
+  background-color: white;
+  margin: 80px;
+  text-align: center;
+}
+
+.contact .text_contact h2 {
+  font-family: "Playfair Display", serif;
+  color: rgb(3, 3, 3);
+}
+
+.contact .text_contact p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(3, 3, 3);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact img {
+  width: 300px;
+  height: 450px;
+  margin: 80px;
+  border-color: #e8e3d9;
+  border-style: solid;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #d8d3c0;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #d8d3c0;
+  color: white;
+}
+
+.fa-instagram {
+  background: #d8d3c0;
+  color: white;
+}
+
+.open_chat {
+  background-color: #d8d3c0;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  bottom: 23px;
+  left: 28px;
+  width: 280px;
+}
+
+.chat-popup {
+  display: none;
+  bottom: 0;
+  left: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
