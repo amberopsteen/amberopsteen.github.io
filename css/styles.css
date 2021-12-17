@@ -48,10 +48,6 @@ li a:hover:not(.active) {
   background-color: #e8e3d9;
 }
 
-h2 {
-  font-family: "Courier New", Courier, monospace;
-}
-
 .landing {
   display: flex;
   justify-content: center;
@@ -96,7 +92,7 @@ h2 {
   justify-content: center;
   text-align: center;
   font-weight: lighter;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Playfair Display", serif;
   line-height: 1.1;
   padding-top: 20px;
 }
@@ -122,13 +118,16 @@ h2 {
 
 .who_am_i .text_who_am_i {
   text-align: center;
-  width: 350px;
+  width: 270px;
   background-color: white;
+  margin-bottom: 149px;
 }
 
 .who_am_i .text_who_am_i h2 {
   font-family: "Playfair Display", serif;
   color: rgb(3, 3, 3);
+  margin-top: 8px;
+  background-color: #e8e3d9;
 }
 
 .who_am_i .text_who_am_i p {
@@ -142,11 +141,32 @@ h2 {
 }
 
 .who_am_i img {
-  width: 300px;
-  height: 450px;
-  margin: 80px;
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  height: 500px;
   border-color: #e8e3d9;
   border-style: solid;
+}
+
+.who_am_i .text_who_am_i_2 {
+  text-align: center;
+  width: 350px;
+  height: 100px;
+  background-color: white;
+}
+
+.who_am_i .text_who_am_i_2 p {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(3, 3, 3);
+  margin-top: 160px;
+}
+
+.who_am_i .text_who_am_i_2 .block {
+  margin-top: 20px;
+  width: 350px;
+  height: 50px;
+  background-color: #e8e3d9;
 }
 
 .projects {
@@ -176,6 +196,7 @@ h2 {
 .projects .text_projects h2 {
   font-family: "Playfair Display", serif;
   color: rgb(3, 3, 3);
+  background-color: white;
 }
 
 .projects .text_projects p {
