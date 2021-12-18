@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <header>
+    <div class="navbar">
+      <ul>
+        <li><a #home class="active" href="#home">Home</a></li>
+        <li><a href="#h1">Wie ben ik?</a></li>
+        <li><a href="#h2">Projecten</a></li>
+        <li><a href="#h3">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <body>
+    <div class="background_landing">
+      <div class="landing" id="home">
+        <div class="content">
+          <img src="media/foto5.jpg" />
+          <h1>Amber Opsteen</h1>
+          <p>Welkom bij mijn portfolio website! Mijn naam is Amber Opsteen.</p>
+        </div>
+      </div>
+    </div>
+    <div class="who_am_i" id="h1">
+      <div class="image_text">
+        <img class="" src="media/coffee.jpg" />
+        <h2>Wie ben ik?</h2>
+      </div>
+      <div class="text_who_am_i_2">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Reprehenderit odio ipsam optio ad quasi vero?
+        </p>
+        <div class="block"></div>
+      </div>
+    </div>
+    <div class="projects" id="h2">
+      <div class="gallerij">
+        <a target="_blank" href="media/website.png">
+          <img
+            src="media/website.png"
+            alt="Website Amber Opsteen"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">Portfolio website Amber Opsteen</div>
+      </div>
+
+      <div class="gallerij">
+        <a target="_blank" href="media/imgnotav.jpg">
+          <img src="media/imgnotav.jpg" alt="image not available" width="600" height="400" />
+        </a>
+        <div class="desc">No project available</div>
+      </div>
+      <div class="gallerij">
+        <a target="_blank" href="media/imgnotav.jpg">
+          <img src="media/imgnotav.jpg" alt="image not available" width="600" height="400" />
+        </a>
+        <div class="desc">No project available</div>
+      </div>
+      <div class="gallerij">
+        <a target="_blank" href="media/imgnotav.jpg">
+          <img src="media/imgnotav.jpg" alt="image not available" width="600" height="400" />
+        </a>
+        <div class="desc">No project available</div>
+      </div>
+      </div>
+    </div>
+    <div class="contact" id="h3">
+      <div class="text_contact">
+        <h2>Contact</h2>
+        <div class="container">
+          <form action="/action_page.php">
+            <label for="fname">Voornaam</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Uw voornaam.."
+            />
+
+            <label for="lname">Achternaam</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Uw achternaam.."
+            />
+
+            <label for="country">Land</label>
+            <select id="country" name="country">
+              <option value="nederland">Nederland</option>
+              <option value="duitsland">Duitsland</option>
+              <option value="frankrijk">Frankrijk</option>
+              <option value="Belgie">België</option>
+              <option value="engeland">Engeland</option>
+            </select>
+
+            <label for="onderwerp">Onderwerp</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Uw bericht"
+              style="height: 200px"
+            ></textarea>
+
+            <input type="verzenden" value="verzenden" />
+          </form>
+        </div>
+      </div>
+      <div class="photo">
+        <img class="" src="media/contact.jpg" />
+        <a href="https://nl-nl.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+  </body>
+</html>
