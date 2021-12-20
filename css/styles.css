@@ -122,7 +122,6 @@ li a:hover:not(.active) {
   background-color: white;
 }
 
-
 .who_am_i .text_who_am_i {
   text-align: center;
   width: 270px;
@@ -200,34 +199,117 @@ li a:hover:not(.active) {
 }
 .projects {
   padding-top: 60px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
   width: 100%;
   height: auto;
-  background-color: #e8e3d9;
-}
-
-.project_kaart {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 300px;
-  height: 300px;
   background-color: white;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 30px;
 }
 
-.project_kaart:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+:root {
+  --text-light: rgba(255, 255, 255, 0.6);
+  --text-lighter: rgba(255, 255, 255, 0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
 }
 
-.projects .project_kaart .container {
-  padding: 8px 8px;
+.background_projects {
+  align-items: flex-start;
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: 50px;
+}
+
+.card-grid {
+  display: grid;
+  grid-column-gap: var(--spacing-l);
+  width: 100%;
+}
+
+@media (min-width: 540px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  list-style: none;
+  position: relative;
+}
+
+.card:before {
+  content: "";
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+
+.card__background {
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-l);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: filter 200ms linear, transform 200ms linear;
+}
+
+
+.card:hover .card__background{
+  transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover > .card:not(:hover) .card__background {
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card__content {
+  margin-top: 400px;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+  left: 23px;
+}
+
+.card__category {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-s);
+  text-transform: uppercase;
+}
+
+.button {
+  background-color:#e8e3d9; 
+  border: none;
+  color: white;
+  padding: 16px 15px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: black; 
+  color: white; 
+  border: 1px solid black;
+
+}
+
+.button1:hover {
   background-color: white;
-  border-color: black;
+  color: black;
 }
 
 .contact {
@@ -237,7 +319,7 @@ li a:hover:not(.active) {
   align-items: center;
   width: 100%;
   height: 800px;
-  background-color: white;
+  background-color: #d8d3c0;
 }
 
 .contact .text_contact {
@@ -246,7 +328,7 @@ li a:hover:not(.active) {
   align-items: center;
   flex-wrap: wrap;
   width: 350px;
-  background-color: white;
+  background-color: #d8d3c0;
   margin: 80px;
   text-align: center;
 }
@@ -297,24 +379,24 @@ li a:hover:not(.active) {
 }
 
 .fa-facebook {
-  background: #d8d3c0;
-  color: white;
+  background: white;
+  color: #d8d3c0;
   margin: 10px;
   width: 65px;
   height: 65px;
 }
 
 .fa-linkedin {
-  background: #d8d3c0;
-  color: white;
+  background: white;
+  color: #d8d3c0;
   margin: 10px;
   width: 65px;
   height: 65px;
 }
 
 .fa-instagram {
-  background: #d8d3c0;
-  color: white;
+  background: white;
+  color: #d8d3c0;
   margin: 10px;
   width: 65px;
   height: 65px;
@@ -338,6 +420,7 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  background-color: #d8d3c0;
 }
 
 input[type="verzenden"] {
@@ -357,6 +440,6 @@ input[type="verzenden"]:hover {
 .contact .text_contact .container {
   font-family: "Courier New", Courier, monospace;
   border-radius: 5px;
-  background-color: #d8d3c0;
+  background-color: white;
   padding: 20px;
 }
