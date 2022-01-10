@@ -15,10 +15,11 @@
   <header>
     <div class="navbar">
       <ul>
-        <li><a #home class="active" href="#home">Home</a></li>
-        <li><a href="#h1">Wie ben ik?</a></li>
-        <li><a href="#h2">Projecten</a></li>
-        <li><a href="#h3">Contact</a></li>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#wie ben ik">Wie ben ik?</a></li>
+        <li><a href="#projecten">Projecten</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="overige">Overige</a></li>
       </ul>
     </div>
   </header>
@@ -26,26 +27,47 @@
     <div class="background_landing">
       <div class="landing" id="home">
         <div class="content">
-          <img src="media/foto5.jpg" />
-          <h1>Amber Opsteen</h1>
-          <p>Welkom bij mijn portfolio website! Mijn naam is Amber Opsteen.</p>
+          <img src="media/foto.jpg" />
+          <div class="text_block"></div>
+          <div class= "name_text">
+            <h2 class="rotate">Amber</h2>
+            <h2>Opsteen</h2>
+          </div>
+      </div>
+    </div>
+    <div class="who_am_i" id="wie ben ik">
+      <div class="wiebenik">
+
+      </div>
+      <div class="skillbar">
+        <h1>Vaardigheden</h1>
+        <p>HTML</p>
+        <div class="container">
+          <div class="skills html">20%</div>
+        </div>
+        <p>CSS</p>
+        <div class="container">
+          <div class="skills css">20%</div>
+        </div>
+        <p>Python</p>
+        <div class="container">
+          <div class="skills python">10%</div>
+        </div>
+        <p>Java</p>
+        <div class="container">
+          <div class="skills java">5%</div>
+        </div>
+        <p>PHP</p>
+        <div class="container">
+          <div class="skills php">0%</div>
+        </div>
+        <p>Javascript</p>
+        <div class="container">
+          <div class="skills js">0%</div>
         </div>
       </div>
     </div>
-    <div class="who_am_i" id="h1">
-      <div class="image_text">
-        <img class="" src="media/coffee.jpg" />
-        <h2>Wie ben ik?</h2>
-      </div>
-      <div class="text_who_am_i_2">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Reprehenderit odio ipsam optio ad quasi vero?
-        </p>
-        <div class="block"></div>
-      </div>
-    </div>
-    <div class="title" id="h2">
+    <div class="title" id="projecten">
       <h2>Projecten</h2>
     </div>
     <div class="projects">
@@ -57,12 +79,7 @@
               style="background-image: url(media/website.png)"
             ></div>
             <div class="card__content">
-              <button
-                href="https://amberopsteen.github.io"
-                class="button button1"
-              >
-                Read more
-              </button>
+              <button href="" class="button button1">Read more</button>
               <button href="" class="button button1">Show project</button>
             </div>
           </a>
@@ -99,11 +116,11 @@
         </div>
       </section>
     </div>
-    <div class="contact" id="h3">
+    <div class="contact" id="contact">
       <div class="text_contact">
         <h2>Contact</h2>
         <div class="container">
-          <form action="/action_page.php">
+          <form action="">
             <label for="fname">Voornaam</label>
             <input
               type="text"
@@ -125,7 +142,7 @@
               <option value="nederland">Nederland</option>
               <option value="duitsland">Duitsland</option>
               <option value="frankrijk">Frankrijk</option>
-              <option value="Belgie">België</option>
+              <option value="belgie">België</option>
               <option value="engeland">Engeland</option>
             </select>
 
@@ -141,7 +158,7 @@
           </form>
         </div>
       </div>
-      <div class="photo">
+      <div class="contact_media">
         <img class="" src="media/contact.jpg" />
         <a href="https://nl-nl.facebook.com/" class="fa fa-facebook"></a>
         <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
