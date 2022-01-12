@@ -236,12 +236,15 @@ li a:hover:not(.active) {
   background-color: #23342c;
 }
 
+
+
 @media only screen and (max-width: 800px) {
   .who_am_i {
     background-color: red;
     height: 300px;
   }
 }
+
 
 .title {
   padding-top: 50px;
@@ -306,7 +309,20 @@ li a:hover:not(.active) {
   width: 100%;
 }
 
-.card__background {
+.card__background1{
+  background-image: url(../media/bg2.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-l);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: filter 200ms linear, transform 200ms linear;
+}
+
+.card__background2{
   background-image: url(../media/notfound.jpg);
   background-size: cover;
   background-position: center;
@@ -319,11 +335,14 @@ li a:hover:not(.active) {
   transition: filter 200ms linear, transform 200ms linear;
 }
 
-.card:hover .card__background {
+.card:hover .card__background1 {
+  transform: scale(1.05) translateZ(0);
+}
+.card:hover .card__background2 {
   transform: scale(1.05) translateZ(0);
 }
 
-.card-grid:hover > .card:not(:hover) .card__background {
+.card-grid:hover > .card:not(:hover) {
   filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
 }
 
@@ -351,7 +370,6 @@ li a:hover:not(.active) {
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
-  margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -526,3 +544,4 @@ textarea {
     text-align: center;
   }
 }
+
