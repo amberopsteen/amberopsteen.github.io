@@ -106,7 +106,7 @@
 .background_landing .landing .content .name_text {
   position: absolute;
   top: 50px;
-  left: 830px;
+  left: 55%;
   display: grid;
   height: 100vh;
   justify-content: center;
