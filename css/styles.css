@@ -51,9 +51,10 @@
   color: black;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 400px) {
   .navbar {
     position: relative;
+    font-size: 12px;
   }
 }
 
