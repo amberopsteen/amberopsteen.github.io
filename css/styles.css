@@ -68,6 +68,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0px -10px 16px #283227 inset;
+  width: auto;
+  height: 100%;
 }
 
 .background_landing .landing {
