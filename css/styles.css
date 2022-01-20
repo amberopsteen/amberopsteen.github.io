@@ -59,9 +59,10 @@
 }
 
 /*De bladeren foto*/
-.background_landing {
-  position: relative;
-  z-index: 1;
+.background_landing { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("../media/bg.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -70,54 +71,51 @@
   box-shadow: 0px -10px 16px #283227 inset;
   width: auto;
   height: 100%;
+  min-height: 100vh;
+  padding-top: 46.4px;
 }
 
-.background_landing .landing {
-  width: 100%;
-  height: auto;
-  padding: 180px 150px 70px 150px;
-}
-
-.background_landing .landing .content {
+.background_landing .content {
+  position: relative;
   display: flex;
+  width: 320px;
+  height: 450px;
   justify-content: center;
 }
 
-.background_landing .landing .content img {
+.background_landing .content img {
   position: relative;
-  width: 320px;
-  height: 450px;
-  margin-top: 10px;
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 100px;
-  margin-left: 250px;
-}
-
-.background_landing .landing .content .text_block {
-  position: relative;
-  z-index: -1;
-  left: -363px;
-  top: -34px;
-  width: 320px;
-  height: 450px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-.background_landing .landing .content .name_text {
+.background_landing .content .border_block {
   position: absolute;
+  z-index: 5;
+  left: -20px;
+  top: -20px;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.background_landing .content .name_text {
+  position: absolute;
+  z-index: 15;
   top: 50px;
-  left: 55%;
+  left: 82.5%;
   display: grid;
-  height: 100vh;
   justify-content: center;
   align-content: center;
   grid-template-columns: max-content max-content;
   color: white;
 }
 
-.background_landing .landing .content .name_text h2 {
+.background_landing .content .name_text h2 {
   font-size: 100px;
   margin: 0;
   writing-mode: vertical-lr;
@@ -130,59 +128,31 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .background_landing .landing {
-    width: 100%;
+  .background_landing .content {
+    left: -20px;
+  }
+
+  .background_landing .content .name_text h2 {
+    font-size: 10vw;
+  }  
+
+  .background_landing .content {
+    position: relative;
+    display: flex;
+    width: 40%;
+    min-width: 200px;
     height: auto;
-    padding: 80px 0px 0px 280px;
+    justify-content: center;
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .background_landing .landing {
-    width: 100%;
-    height: auto;
-    padding: 80px 40px 0px 0px;
+@media only screen and (max-width: 550px) {
+  .background_landing .content {
+    left: -15px;
   }
-}
 
-@media only screen and (max-width: 800px) {
-  .background_landing .landing .content img {
-    margin-bottom: 100px;
-    margin-left: 0px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .background_landing .landing .content img {
-    width: 200px;
-    height: 280px;
-    margin-left: 0px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .background_landing .landing .content .text_block {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .background_landing .landing .content .name_text {
-    top: 0px;
-    left: 530px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .background_landing .landing .content .name_text {
-    top: -104px;
-    left: 235px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .background_landing .landing .content .name_text h2 {
-    font-size: 60px;
+  .background_landing .content .name_text h2 {
+    font-size: 57px;
   }  
 }
 
@@ -597,15 +567,18 @@ textarea {
   .contact_media .fa-facebook {
     background: #e8e3d9;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
   
   .contact_media .fa-linkedin {
     background: #e8e3d9;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
   
   .contact_media .fa-instagram {
     background: #e8e3d9;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
 }
