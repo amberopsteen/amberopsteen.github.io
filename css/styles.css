@@ -571,11 +571,45 @@ textarea {
     align-items: center;
     flex-wrap: wrap;
     width: 400px;
-    background-color: #d8d3c0;
     margin: 120px;
     text-align: center;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .contact_media .fa-facebook {
+    background: #e8e3d9;
+    margin-top: 10px;
+  }
+  
+  .contact_media .fa-linkedin {
+    background: #e8e3d9;
+    margin-bottom: 10px;
+  }
+  
+  .contact_media .fa-instagram {
+    background: #e8e3d9;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contact_media .fa-facebook {
+    background: #e8e3d9;
+    margin-top: 10px;
+  }
+  
+  .contact_media .fa-linkedin {
+    background: #e8e3d9;
+    margin-bottom: 10px;
+  }
+  
+  .contact_media .fa-instagram {
+    background: #e8e3d9;
+    margin-bottom: 10px;
+  }
+}
+
 
 .overige {
   height: 800px;
@@ -588,6 +622,6 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 800px;
+  height: 550px;
   width: 100%;
 }
