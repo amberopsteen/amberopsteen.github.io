@@ -347,19 +347,13 @@
 }
 
 .card__content {
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: var(--spacing-l);
   position: absolute;
   top: 0px;
   left: 0px;
-}
-
-.card__category {
-  color: var(--text-light);
-  font-size: 0.9rem;
-  margin-bottom: var(--spacing-s);
-  text-transform: uppercase;
 }
 
 .card__content .button {
@@ -402,15 +396,6 @@
   .projects {
     padding-top: 0px;
   }
-
-  .card__background1 {
-    margin-bottom: 20px;
-  }
- 
-    .card__content {
-      margin-top: 310px;
-      left: 19px;
-    }
   
     .card__content .button {
       font-size: 10px;
