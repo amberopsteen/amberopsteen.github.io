@@ -81,11 +81,13 @@
   width: 320px;
   height: 450px;
   justify-content: center;
+  animation: expand .8s ease forwards;
 }
 
 .background_landing .content h1 {
-  position:relative;
+  position: relative;
   z-index: -10;
+  left: 120px;
 }
 
 .background_landing .content img {
@@ -558,6 +560,7 @@ textarea {
     width: 400px;
     margin: 120px;
     text-align: center;
+    
   }
 
   .contact_media .fa-facebook {
@@ -614,4 +617,93 @@ textarea {
   height: 550px;
   width: 100%;
 }
+}
+
+
+:root {
+  --secondary-color: #f7f6f5;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -10;
+  background-color: var(--contrast-color);
+}
+
+.leesmeer_info {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  animation: expand .8s ease forwards;
+  background-color: var(--secondary-color);
+  position: relative;
+  font-family: 'Open Sans',sans-serif;
+  transition: all .8s ease;
+}
+
+.leesmeer_content {
+ width: 50%;
+}
+
+.leesmeer_content_inner {
+  width: 80%;
+  margin-left: 80px;
+}
+
+.leesmeer_outer_img {
+  margin: 50px;
+  width: 50%;
+  overflow: hidden;
+}   
+
+    
+.leesmeer_img {
+  width: 560px;
+  height: 560px;
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
+.par {
+  height: auto;
+  overflow: hidden;
+}
+
+.par p{
+  line-height: 28px;
+  transform: translateY(300px);
+  animation: slideUp .8s ease-in-out forwards .8s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
