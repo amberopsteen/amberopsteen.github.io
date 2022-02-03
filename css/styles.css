@@ -81,7 +81,7 @@
   width: 320px;
   height: 450px;
   justify-content: center;
-  animation: expand .8s ease forwards;
+  animation: scale-in-hor-center 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .background_landing .content h1 {
@@ -120,6 +120,7 @@
   align-content: center;
   grid-template-columns: max-content max-content;
   color: white;
+  animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 .background_landing .content .name_text h2 {
@@ -180,6 +181,7 @@
   margin-bottom: 50px;
 }
 
+/*block_one en block_two staan achter aboutme*/
 .who_am_i .info_content .block_one {
   position: relative;
   left: 90px;
@@ -241,6 +243,7 @@
   
 }
 
+/*titel projecten*/
 .title {
   font-family: 'Open Sans',sans-serif;
   font-size: 26px;
@@ -304,7 +307,7 @@
   width: 100%;
 }
 
-/*Deze website*/
+/*image van deze website*/
 .card__background1 {
   display: flex;
   justify-content: center;
@@ -441,6 +444,8 @@
   margin-top: 50px;
 }
 
+
+/*contact formulier*/
 .contact .text_contact .container {
   border-radius: 5px;
   background-color: white;
@@ -518,6 +523,7 @@ textarea {
   margin: 10px;
   width: 55px;
   height: 55px;
+  animation: roll-in-left 1.6s ease-out both;
 }
 
 .contact_media .fa-linkedin {
@@ -526,6 +532,7 @@ textarea {
   margin: 10px;
   width: 55px;
   height: 55px;
+  animation: roll-in-bottom 1.6s ease-out both;
 }
 
 .contact_media .fa-instagram {
@@ -534,6 +541,7 @@ textarea {
   margin: 10px;
   width: 55px;
   height: 55px;
+  animation: roll-in-right 1.6s ease-out both;
 }
 
 @media only screen and (max-width: 800px) {
@@ -564,6 +572,7 @@ textarea {
   }
 }
 
+/*overige.html*/
 .overige {
   height: 550px;
   width: 100%;
@@ -620,6 +629,7 @@ textarea {
   background-color: var(--contrast-color);
 }
 
+/*leesmeer.html*/
 .leesmeer_info {
   display: flex;
   height: 100vh;
@@ -666,6 +676,7 @@ textarea {
   animation: slideUp .8s ease-in-out forwards .8s;
 }
 
+/*animaties*/
 @keyframes slideIn {
   0% {
     transform: translateX(500px) scale(.2);
@@ -692,3 +703,60 @@ textarea {
     transform: translateX(0px);
   }
 }
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-hor-center {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes roll-in-left {
+  0% {
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes roll-in-bottom {
+  0% {
+    transform: translateY(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+
+@keyframes roll-in-right {
+  0% {
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
