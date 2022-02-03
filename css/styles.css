@@ -632,7 +632,8 @@ textarea {
 /*leesmeer.html*/
 .leesmeer_info {
   display: flex;
-  height: 100vh;
+  height: 100%;
+  padding: 80px;
   justify-content: space-around;
   align-items: center;
   color: black;
@@ -644,12 +645,15 @@ textarea {
 }
 
 .leesmeer_content {
- width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ width: 100%;
 }
 
 .leesmeer_content_inner {
   width: 80%;
-  margin-left: 80px;
+  
 }
 
 .leesmeer_outer_img {
@@ -660,21 +664,43 @@ textarea {
 
     
 .leesmeer_img {
-  width: 560px;
-  height: 560px;
+  width: 100%;
+  height: auto;
   animation: slideIn 1.5s ease-in-out forwards;
 }
 
 .par {
-  height: auto;
   overflow: hidden;
 }
 
 .par p{
-  line-height: 28px;
+  width: 100%;
+  line-height: 15px;
   transform: translateY(300px);
   animation: slideUp .8s ease-in-out forwards .8s;
 }
+
+@media only screen and (max-width: 800px) {
+  .leesmeer_info {
+    padding: 20px;
+    font-size: 10px;
+  }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .leesmeer_info {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 80px;
+      font-size: 10px;
+      text-align: center;
+    }
+
+    .par p{
+      text-align: center;
+    }
+    }
 
 /*animaties*/
 @keyframes slideIn {
